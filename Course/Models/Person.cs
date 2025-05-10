@@ -7,21 +7,27 @@ public class Person
 
     protected Person(string firstName, string lastName)
     {
-        FirstName = firstName;
-        LastName = lastName;
-
-        Validate();
+        SetFirstName(firstName);
+        SetLastName(lastName);
     }
 
-    private void Validate()
+    private void SetFirstName(string firstName)
     {
-        if (string.IsNullOrEmpty(FirstName))
+        if (string.IsNullOrEmpty(firstName))
         {
-            throw new ArgumentNullException(nameof(FirstName));
+            throw new ArgumentNullException(nameof(firstName));
         }
-        if (string.IsNullOrEmpty(LastName))
+
+        FirstName = firstName;
+    }
+
+    private void SetLastName(string lastName)
+    {
+        if (string.IsNullOrEmpty(lastName))
         {
-            throw new ArgumentNullException(nameof(LastName));
+            throw new ArgumentNullException(nameof(lastName));
         }
+
+        LastName = lastName;
     }
 }

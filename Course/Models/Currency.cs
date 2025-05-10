@@ -27,7 +27,7 @@ public struct Currency
         {
             throw new ArgumentException("Price cannot be negative");
         }
-        
+
         ToDollar = toDollar;
     }
 }

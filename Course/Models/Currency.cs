@@ -3,9 +3,9 @@
 public struct Currency
 {
     public string Name { get; private set; }
-    public double ToDollar { get; private set; }
+    public decimal ToDollar { get; private set; }
 
-    public Currency(string name, double price)
+    public Currency(string name, decimal price)
     {
         SetName(name);
         SetPrice(price);
@@ -21,7 +21,7 @@ public struct Currency
         Name = name;
     }
 
-    public void SetPrice(double toDollar)
+    public void SetPrice(decimal toDollar)
     {
         if (toDollar < 0)
         {

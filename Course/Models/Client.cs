@@ -2,7 +2,7 @@
 
 public class Client : Person
 {
-    protected Client(string firstName, string lastName) : base(firstName, lastName)
+    public Client(string firstName, string lastName) : base(firstName, lastName)
     {
     }
 }

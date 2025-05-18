@@ -1,13 +1,14 @@
 ﻿using Models;
+using Services;
 
-namespace Services;
+namespace PracticeWithTypes;
 
 class Program
 {
-    static void Main(string[] args)
+    private static void Main()
     {
         var employee = new Employee("Эдуард", "Беккер", "Слесарь ", 1000);
-        var currency = new Currency("USD", (decimal)16.50);
+        var currency = new Currency("USD", 16.50m);
 
         var newContract = "Водитель";
         UpdateEmployeeContract(employee, newContract);
@@ -25,8 +26,8 @@ class Program
             new Employee("Даниил", "Колотушкин", "Слесарь", 1000)
         };
 
-        var qBank = new BankService();
-        qBank.SalaryCalculation(owners, 20000, 10000);
+        var apb = new BankService();
+        apb.SalaryCalculation(owners, 20000, 10000);
 
         foreach (var owner in owners)
         {
@@ -34,10 +35,10 @@ class Program
         }
 
         var client = new Client("Игорь ", "Киселев");
-        employee = qBank.ConvertClientToEmployee(client);
+        employee = apb.ConvertClientToEmployee(client);
 
         Console.WriteLine(
-            $"Новый сторудник : {employee.FirstName} {employee.LastName} \nЗарплата : {employee.Salary}  Должность: {employee.Contract}");
+            $"Новый сотрудник : {employee.FirstName} {employee.LastName} \nЗарплата : {employee.Salary}  Должность: {employee.Contract}");
     }
 
     private static void UpdateEmployeeContract(Employee employee, string newContract)

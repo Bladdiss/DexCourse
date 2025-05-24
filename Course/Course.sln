@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeWithTypes", "PracticeWithTypes\PracticeWithTypes.csproj", "{24001328-1AE5-4969-AEF3-EF2760759894}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{5E5ADA17-77C9-412A-9338-776B049D5393}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DC1BF3A9-960E-4007-BD2A-BD39839971C0} = {2A1743E3-9839-4512-9E5B-6A5F8C36A909}
 		{24001328-1AE5-4969-AEF3-EF2760759894} = {7D8E9470-A238-4B77-92E2-5AF3E12295E4}
+		{5E5ADA17-77C9-412A-9338-776B049D5393} = {2A1743E3-9839-4512-9E5B-6A5F8C36A909}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DC1BF3A9-960E-4007-BD2A-BD39839971C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{24001328-1AE5-4969-AEF3-EF2760759894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24001328-1AE5-4969-AEF3-EF2760759894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24001328-1AE5-4969-AEF3-EF2760759894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5ADA17-77C9-412A-9338-776B049D5393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5ADA17-77C9-412A-9338-776B049D5393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5ADA17-77C9-412A-9338-776B049D5393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5ADA17-77C9-412A-9338-776B049D5393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

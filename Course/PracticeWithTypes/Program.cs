@@ -14,7 +14,7 @@ class Program
         UpdateEmployeeContract(employee, newContract);
 
         var newName = "EUR";
-        var newPrice = (decimal)20.01;
+        var newPrice = 20.01m;
         ReplaceCurrency(ref currency, newName, newPrice);
 
         Console.WriteLine($"Обновленный контракт : {employee.Contract}");
@@ -27,7 +27,7 @@ class Program
         };
 
         var apb = new BankService();
-        apb.SalaryCalculation(owners, 20000, 10000);
+        apb.CalculateSalary(owners, 20000, 10000);
 
         foreach (var owner in owners)
         {

@@ -4,7 +4,7 @@ namespace Services;
 
 public class BankService
 {
-    public void SalaryCalculation(List<Employee> owners, int bankProfit, int bankExpenses)
+    public void CalculateSalary(List<Employee> owners, int bankProfit, int bankExpenses)
     {
         ArgumentNullException.ThrowIfNull(owners, "You must provide at least one employee.");
         ArgumentOutOfRangeException.ThrowIfNegative(

@@ -37,8 +37,8 @@ class Program
         var client = new Client("Игорь ", "Киселев");
         employee = apb.ConvertClientToEmployee(client);
 
-        Console.WriteLine(
-            $"Новый сотрудник : {employee.FirstName} {employee.LastName} \nЗарплата : {employee.Salary}  Должность: {employee.Contract}");
+        Console.WriteLine($"Новый сотрудник : {employee.FirstName} {employee.LastName}");
+        Console.WriteLine($"Зарплата : {employee.Salary}  Должность: {employee.Contract}");
     }
 
     private static void UpdateEmployeeContract(Employee employee, string newContract)
